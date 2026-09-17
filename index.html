@@ -347,6 +347,8 @@
     width:min(360px, calc(100vw - 32px));
     background:var(--bg); border:1px solid var(--frame);
     padding:4px 14px 10px;
+    max-height:calc(100svh - 140px); overflow-y:auto; overscroll-behavior:contain;
+    scrollbar-width:thin; scrollbar-color:var(--line) transparent; touch-action:pan-y;
     opacity:0; transform:translateY(8px); pointer-events:none;
     transition:opacity .3s var(--ease-io), transform .4s var(--ease-out);
   }
